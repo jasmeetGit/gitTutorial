@@ -1,3 +1,5 @@
 # gitTutorial
-testr
+
+form branch 2
+
 added in branch 1
