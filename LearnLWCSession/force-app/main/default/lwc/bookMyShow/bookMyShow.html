@@ -1,0 +1,60 @@
+<template>
+    <lightning-tabset>
+    <lightning-tab label="Movies">  
+    </lightning-tab> 
+     <lightning-tab label="Booking">
+        <h6 style="position: relative;left: 51%;">Online Booking</h6>
+    <div><img 
+        style="width: 690px; height: 150px;" src={movieLogo} onclick={handleToggleClick}/> </div>
+    
+    <div class="slds-grid slds-gutters" >
+        <div class="slds-col extra-div">
+            <template for:each={rowNumber} for:item="row">
+                <lightning-layout  key={row}>
+                    <template for:each={seatNumber} for:item="nmbr">
+                        <lightning-layout-item padding="around-small" key={nmbr} >
+                                <div class={cssClass} >
+                                    <!--<lightning-icon onclick={handleToggleClick} icon-name="utility:user" alternative-text="Connected" size="small" title="large size">-->
+                                    <img src={unselectedLogo} onclick={handleToggleClick}/>    
+                                    <!--</lightning-icon>-->
+                                </div>    
+                        </lightning-layout-item>
+                    </template>    
+                </lightning-layout>
+            </template>
+        </div>
+        
+        <div class="slds-col wrap">
+            <div class="slds-card-div-selected logo-div" >
+                <img src={unselectedLogo} title="Selected Seats" />
+            </div>
+            <div class="slds-card-div-unselected logo-div" title="Available Seats">
+                <img src={unselectedLogo} />  
+            </div>  
+            <div class="slds-card-div-reserved logo-div"  title="Reserved Seats">
+                <img src={unselectedLogo} />
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    
+    <lightning-layout>
+        <lightning:layoutItem>
+            <div class="screen-div">
+                <p>Screen</p>
+            </div>
+        </lightning:layoutItem>
+        
+    </lightning-layout>
+
+        <div class="paycard">
+            
+            <!--<lightning-icon icon-name="action:approval" alternative-text="Approved" title="Approved"></lightning-icon>-->
+            <lightning-button variant="success" label={totalAmount} title="Make Payment" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        
+        </div>
+    </lightning-tab>    
+    </lightning-tabset>
+</template>

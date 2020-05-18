@@ -1,0 +1,76 @@
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.app {
+    background-color: #fafaf9;
+    height: 100vh;
+    overflow: scroll;
+}
+.slds-card-div-selected{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+    padding: 0px;
+    background: padding-box rgb(255, 255, 255);
+    border-width: thick;
+    border-style: solid;
+    border-color: greenyellow;
+    border-image: initial;
+    border-radius: 0.25rem;
+
+}
+.slds-card-div-unselected{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+    padding: 0px;
+    background: padding-box rgb(255, 255, 255);
+    border-width: thick;
+    border-style: solid;
+    border-color: rgb(0, 204, 255);
+    border-image: initial;
+    border-radius: 0.25rem;
+
+}
+.slds-card-div-reserved{
+        position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+    padding: 0px;
+    background: padding-box grey;
+    border-width: thick;
+    border-style: solid;
+    border-color: grey;
+    border-image: initial;
+    border-radius: 0.25rem;
+
+}
+.screen-div{
+    background-color: violet;
+    width: 300px;
+    display: inline-block;
+    /* align-content: center; */
+    text-align: center;
+    /* left: 50%; */
+    margin-left: 67%;
+}
+.wrap{
+    
+    margin-top:20px;
+}
+.logo-div{
+    width:30px;
+    margin-top:10px;
+}
+.btn{
+    margin-top:30px;
+}
+.paycard{
+    position: relative;
+    left: 86%;
+    top: 66%;
+}
+.extra-div{
+    width: 75%;
+}   
